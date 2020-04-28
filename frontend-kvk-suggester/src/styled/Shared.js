@@ -24,8 +24,8 @@ export const Input = styled.input({
 
 export const CompanyContainer = styled.div({
     display: 'block',
-    padding: '6px 12px',
-    marginBottom: '0',
+    padding: '10px',
+    marginBottom: '20px',
     fontSize: '14px',
     fontWeight: 'normal',
     lineHeight: '1.42857143',

@@ -13,7 +13,7 @@ function companyFinderReducer(state, action) {
     switch (action.type) {
         case 'changeString': {
             return {
-                searchString: action.value,
+                searchString: action.searchString,
                 companies: state.companies,
                 status: state.status
             }

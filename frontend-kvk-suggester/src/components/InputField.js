@@ -11,7 +11,7 @@ export default function InputField() {
 
     useEffect(() => {
         document.title = `${value}`;
-        dispatch({ type: 'changeString', value: value })
+        dispatch({ type: 'changeString', searchString: value })
     }, [value, dispatch]);
 
     return (
