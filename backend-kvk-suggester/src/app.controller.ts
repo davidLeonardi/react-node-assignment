@@ -21,10 +21,10 @@ export class AppController {
   @Get('getCompanies')
   async getCompanySubstring(@Query('substring') substring: string): Promise<CompaniesList> {
     console.dir(substring);
-    if (substring.length <= 4) {
+    if (substring.length <= 3) {
       throw new HttpException({
         status: HttpStatus.BAD_REQUEST,
-        error: 'Company name not long enough. Pleas specify more than 4 chars'
+        error: 'Company name not long enough. Pleas specify at least 4 charachters'
       }, HttpStatus.BAD_REQUEST);
     }
 
